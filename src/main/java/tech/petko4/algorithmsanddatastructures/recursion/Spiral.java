@@ -1,4 +1,4 @@
-package com.petko.algorithms_and_datastructures.recursion;
+package tech.petko4.algorithmsanddatastructures.recursion;
 
 import java.awt.Canvas;
 import java.awt.Color;

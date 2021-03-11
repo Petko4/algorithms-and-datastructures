@@ -1,8 +1,9 @@
-package com.petko.algorithms_and_datastructures.recursion;
+package tech.petko4.algorithmsanddatastructures.recursion;
 
 public class Recursion {
 
-	private static int[] array = {1,2,3,2,-7,44,5,1,0,-3};
+	private final static int[] array = {1,2,3,2,-7,44,5,1,0,-3};
+	
 	
 	public static void main(String[] args) {
 		findElement(array, 0, array.length - 1, 7);
