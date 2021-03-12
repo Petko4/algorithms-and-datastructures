@@ -2,13 +2,6 @@ package tech.petko4.algorithmsanddatastructures.recursion;
 
 public class Recursion {
 
-    private final static int[] array = { 1, 2, 3, 2, -7, 44, 5, 1, 0, -3 };
-
-    public static void main(String[] args) {
-        System.out.println(findElement(array, 0, array.length - 1, 7));
-        System.out.println(findElement(array, 0, array.length - 1, 5));
-    }
-
     /**
      * @param array
      * @param left  boundary of the searching area
@@ -24,6 +17,24 @@ public class Recursion {
             } else {
                 return findElement(array, left + 1, right, x);
             }
+        }
+    }
+    
+    /**
+     * 
+     * @param array
+     * @param left - first index of the array
+     * @param right - last index of the array
+     * @return array in reversed order
+     */
+    public static int[] reverseArray(int[] array, int left, int right) {
+        if(left >= right) {
+            return array;
+        } else {
+            int helperVaribale = array[left];
+            array[left] = array[right];
+            array[right] = helperVaribale;
+            return reverseArray(array, left + 1, right - 1);
         }
     }
 }
