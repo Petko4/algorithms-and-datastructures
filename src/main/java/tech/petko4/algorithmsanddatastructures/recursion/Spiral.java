@@ -7,13 +7,15 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 
 /**
- * Class displays spiral which is drew via recursion
+ * The class displays spiral which is drew via recursion.
  * @author Petko4
  *
  */
 public class Spiral extends Canvas {
 	
-	private static final int WIDTH = 800;
+    private static final long serialVersionUID = 4629044331461303592L;
+    
+    private static final int WIDTH = 800;
 	private static final int HEIGHT = 800;
 	
 	public static void main(String[] args) {

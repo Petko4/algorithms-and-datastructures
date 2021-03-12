@@ -11,9 +11,6 @@ public class Recursion {
 	}
 	
 	
-	
-	
-	
 	/**
 	 * @param array
 	 * @param left boundary of the searching area
