@@ -27,14 +27,15 @@ public class Spiral extends Canvas {
 		frame.setVisible(true);
 	}
 	
+	@Override
 	public void paint(Graphics g) {
 		g.setColor(Color.GREEN);
-		paintSpiral(g, 10, WIDTH, 0, 0);
+		drawSpiral(g, 10, WIDTH, 0, 0);
 	}
 	
 	
 	//Recursion usage
-	private void paintSpiral(Graphics g, int space, int lineLength, int startX, int startY) {
+	private void drawSpiral(Graphics g, int space, int lineLength, int startX, int startY) {
 		if(space >= lineLength) {
 			return;
 		} else {
@@ -42,7 +43,7 @@ public class Spiral extends Canvas {
 			g.drawLine(startX + lineLength, startY, startX + lineLength, startY + lineLength);
 			g.drawLine(startX + lineLength, startY + lineLength, startX + space, startY + lineLength);
 			g.drawLine(startX + space, startY + lineLength, startX + space, startY + space);
-			paintSpiral(g, space, lineLength - space - space, startX + space, startY + space);
+			drawSpiral(g, space, lineLength - space - space, startX + space, startY + space);
 		}
 	}
 
